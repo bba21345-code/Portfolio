@@ -15,7 +15,7 @@ document.querySelectorAll("#navLinks a").forEach(link => {
     menuToggle.setAttribute("aria-label", "Open navigation");
     menuToggle.textContent = "☰";
   });
-});
+}); 
 
 const revealElements = document.querySelectorAll(".reveal");
 
