@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#171717">
+<meta name="description" content="Portfolio of Bevara Neeraja — Computer Science and Engineering student interested in Artificial Intelligence, Machine Learning, and Computer Vision.">
+<title>Bevara Neeraja | AI &amp; Tech Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+<canvas id="particle-canvas" aria-hidden="true"></canvas><div class="noise" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div><div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<header class="topbar">
+  <nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="Neeraja home"><span class="brand-mark">N.</span><span>NEERAJA<span style="color:var(--red-bright)">_</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">MENU ☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">ABOUT</a><a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a><a href="#education">EDUCATION</a><a href="#certificates">CERTIFICATES</a><a class="nav-cta" href="#contact">LET'S CONNECT ↗</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Portfolio / 2026</div>
+        <h1>Bevara<br><span class="outline">Nee</span><span class="accent">raja.</span></h1>
+        <p class="hero-copy">Computer Science & Engineering student exploring the intersection of <strong>Artificial Intelligence</strong>, computer vision, and practical software experiences.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">EXPLORE PROJECTS <span>↘</span></a>
+          <a class="btn" href="#contact">CONTACT ME <span>↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <span><i class="status-dot"></i> OPEN TO INTERNSHIP OPPORTUNITIES</span>
+          <span>INDIA · CSE</span>
+        </div>
+      </div>
+      <div class="terminal" aria-label="Interactive portfolio terminal">
+        <div class="terminal-head"><span class="dots"><i></i><i></i><i></i></span><span>neeraja@portfolio: ~</span><span style="margin-left:auto">zsh — 80×24</span></div>
+        <div class="terminal-body">
+          <div class="term-line"><span class="prompt">neeraja@portfolio</span>:~$ whoami</div>
+          <div class="term-line">Bevara Neeraja</div>
+          <div class="term-line"><span class="prompt">neeraja@portfolio</span>:~$ status --academic</div>
+          <div class="term-line"><span class="ok">●</span> B.Tech CSE · Pursuing · CGPA 8.75</div>
+          <div class="term-line"><span class="prompt">neeraja@portfolio</span>:~$ help</div>
+          <div class="term-line dim">Try: skills / projects / about / education / contact</div>
+          <div class="terminal-output" id="terminalOutput" aria-live="polite">System ready. Ask me about my work using the command line below.</div>
+          <form class="terminal-form" id="terminalForm">
+            <label for="terminalInput">›</label>
+            <input id="terminalInput" type="text" autocomplete="off" placeholder="type a command..." aria-label="Ask about Neeraja's portfolio">
+            <button type="submit">RUN ↵</button>
+          </form>
+          <div class="hint">TIP: TYPE “PROJECTS” OR “SKILLS” AND PRESS ENTER</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-head reveal"><div><div class="eyebrow">01 / About</div><h2>Curious by nature.<br>Built to learn.</h2></div><p>A detail-oriented student who enjoys turning ideas into working technology and building skills through hands-on projects.</p></div>
+      <div class="about-grid">
+        <article class="about-card glass reveal"><span class="watermark">01</span><h3>My approach</h3><p>I’m Bevara Neeraja, a Computer Science & Engineering student at Dhanekula Institute of Engineering and Technology. I’m interested in applying AI and software development to real-world challenges while continuing to grow through practical learning and industry experience.</p></article>
+        <article class="about-card glass reveal"><span class="watermark">02</span><h3>Areas I’m exploring</h3><p>Artificial Intelligence, Machine Learning, computer vision, web development, embedded systems, and the Internet of Things. I value collaboration, problem-solving, and continuous improvement.</p><div class="chips" style="margin-top:20px"><span class="chip">AI / ML</span><span class="chip">Computer Vision</span><span class="chip">Web Tech</span><span class="chip">IoT</span></div></article>
+      </div>
+      <div class="facts reveal">
+        <div class="fact"><strong>8.75</strong><span>CGPA · B.TECH</span></div>
+        <div class="fact"><strong>04</strong><span>FEATURED PROJECTS</span></div>
+        <div class="fact"><strong>06</strong><span>RESUME CERTIFICATES</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="section-head reveal"><div><div class="eyebrow">02 / Capabilities</div><h2>Tools in my stack.</h2></div><p>A snapshot of the programming languages, web technologies, and professional strengths listed in my resume.</p></div>
+      <div class="skill-groups">
+        <article class="skill-group glass reveal"><div class="tagline">/ 01 — CODE</div><h3>Programming Languages</h3><div class="chips"><span class="chip">Python</span><span class="chip">Java</span><span class="chip">C</span></div></article>
+        <article class="skill-group glass reveal"><div class="tagline">/ 02 — BUILD</div><h3>Web Technologies</h3><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div></article>
+        <article class="skill-group glass reveal"><div class="tagline">/ 03 — GROW</div><h3>Professional Skills</h3><div class="chips"><span class="chip">Communication</span><span class="chip">Teamwork</span><span class="chip">Problem Solving</span><span class="chip">Time Management</span><span class="chip">Quick Learner</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-head reveal"><div><div class="eyebrow">03 / Selected work</div><h2>Projects with purpose.</h2></div><p>Four projects from my resume focused on AI-powered question answering, object detection, and computer vision.</p></div>
+      <div class="projects-grid">
+        <article class="project-card glass reveal"><div class="project-top"><span class="project-number">PROJECT_01</span><span>AI / VISION</span></div><div class="project-icon">◉?</div><h3>Vision-Based Image Question Answering System</h3><p>Built an AI application that answers questions about images and provides AI-powered answer feedback using a vision-language model.</p><div class="chips"><span class="chip">AI</span><span class="chip">Vision-Language Model</span><span class="chip">Image QA</span></div></article>
+        <article class="project-card glass reveal"><div class="project-top"><span class="project-number">PROJECT_02</span><span>DETECTION / ML</span></div><div class="project-icon">⌗</div><h3>AI-Based Chess Piece Detection Using YOLO</h3><p>Implemented chess-piece detection using Ultralytics YOLO and evaluated model performance using precision, recall, and mAP metrics.</p><div class="chips"><span class="chip">Ultralytics YOLO</span><span class="chip">Object Detection</span><span class="chip">mAP</span></div></article>
+        <article class="project-card glass reveal"><div class="project-top"><span class="project-number">PROJECT_03</span><span>GENERATIVE AI</span></div><div class="project-icon">✳</div><h3>AI-Powered Question Answering Using Google Gemini</h3><p>Integrated the Gemini API with Python to generate AI-powered responses using Google Colab.</p><div class="chips"><span class="chip">Python</span><span class="chip">Gemini API</span><span class="chip">Google Colab</span></div></article>
+        <article class="project-card glass reveal"><div class="project-top"><span class="project-number">PROJECT_04</span><span>COMPUTER VISION</span></div><div class="project-icon">◌</div><h3>Invisible Cloak Using Python and OpenCV</h3><p>Developed a computer vision application using color detection and background replacement to create an invisibility effect.</p><div class="chips"><span class="chip">Python</span><span class="chip">OpenCV</span><span class="chip">Color Detection</span></div></article>
+      </div>
+      <p class="hint" style="margin-top:18px">Project repository and demo links can be added when available.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <div class="section-head reveal"><div><div class="eyebrow">04 / Education</div><h2>The learning path.</h2></div><p>Academic background as stated in the resume.</p></div>
+      <div class="education-list">
+        <article class="education-item glass reveal"><div class="education-year">2024 — PRESENT</div><div><h3>Dhanekula Institute of Engineering and Technology</h3><p>B.Tech · Computer Science & Engineering · Pursuing</p></div><div class="education-score">CGPA 8.75</div></article>
+        <article class="education-item glass reveal"><div class="education-year">2022 — 2024</div><div><h3>Narayana Junior College</h3><p>Intermediate · Mathematics, Physics, Chemistry</p></div><div class="education-score">905 MARKS</div></article>
+        <article class="education-item glass reveal"><div class="education-year">2022</div><div><h3>Ideal High School</h3><p>SSC</p></div><div class="education-score">513 MARKS</div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="container">
+      <div class="section-head reveal"><div><div class="eyebrow">05 / Certifications</div><h2>Learning beyond class.</h2></div><p>Certificates listed in my resume, spanning cloud, cybersecurity, Java, robotics, and generative AI.</p></div>
+      <div class="cert-grid">
+        <article class="cert glass reveal"><span class="cert-mark">01</span><div><strong>Oracle Cloud Infrastructure 2025 AI Foundations Associate</strong><small>ORACLE</small></div></article>
+        <article class="cert glass reveal"><span class="cert-mark">02</span><div><strong>Palo Alto Cybersecurity</strong><small>EDUSKILLS</small></div></article>
+        <article class="cert glass reveal"><span class="cert-mark">03</span><div><strong>Java Developer</strong><small>INFOSYS SPRINGBOARD</small></div></article>
+        <article class="cert glass reveal"><span class="cert-mark">04</span><div><strong>Advanced Robotics Using AI and IoT</strong><small>ROBOTICS / IOT</small></div></article>
+        <article class="cert glass reveal"><span class="cert-mark">05</span><div><strong>Generative AI: Prompt Engineering Basics</strong><small>GENERATIVE AI</small></div></article>
+        <article class="cert glass reveal"><span class="cert-mark">06</span><div><strong>Introduction to Generative AI</strong><small>GOOGLE CLOUD</small></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-panel reveal">
+        <div class="eyebrow">06 / Contact</div>
+        <h2>Have an idea?<br><span style="color:var(--red-bright)">Let’s connect.</span></h2>
+        <p>I’m interested in internship and entry-level opportunities where I can learn, contribute, and keep building practical technical skills.</p>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:bba21345@gmail.com">✉ EMAIL ME</a>
+          <a class="btn" href="tel:+919347285331">☎ +91 93472 85331</a>
+          <button class="btn" id="copyEmail" type="button">COPY EMAIL ⧉</button>
+        </div>
+        <p id="copyMessage" class="hint" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="container footer-row"><span>© <span id="year"></span> BEVARA NEERAJA</span><span>DESIGNED IN DARK MODE <span style="color:var(--red-bright)">●</span> BUILT WITH HTML / CSS / JS</span><a href="#home">BACK TO TOP ↑</a></div></footer>
+<script src="script.js" defer></script>
+</body>
+</html>
